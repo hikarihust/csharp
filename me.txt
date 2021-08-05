@@ -1,0 +1,13 @@
+                        Basic
+Môi trường lập trình
+    Install visual studio
+        visual studio 
+        Tùy chọn khi down:
+            I want to develop for: Desktop 
+            using: .Net(C#,F#,VB.NET)
+            Phiên bản miễn phí: Community 
+        Gói cài đặt: .NET Desktop develop 
+        Ngôn ngữ: Tiếng anh 
+        Account: Later
+        Chọn loại giao diện: Dark 
+    
