@@ -11,15 +11,11 @@ namespace csharp
             // >= 16 Được xem phim Titanic
             // < 16 Không được xem phim Titanic
             int age = 16;
+            String filmName = "Titanic";
+            String result = (age < 16) ? "Không được xem phim" : "Được xem phim";
 
             Console.OutputEncoding = Encoding.UTF8;
-            if (age >= 16)
-            {
-                Console.WriteLine("Được xem phim Titanic");
-            } else
-            {
-                Console.WriteLine("Không được xem phim Titanic");
-            }
+            Console.WriteLine(result + " " + filmName);
         }
     }
 }
