@@ -10,4 +10,13 @@ Môi trường lập trình
         Ngôn ngữ: Tiếng anh 
         Account: Later
         Chọn loại giao diện: Dark 
+    Init project
+        Create a new project
+            Languages: C# 
+            Platform: Window 
+            Project type: Console 
+            Console Application
+            Project name: csharp 
+            Location: C:\xampp\htdocs\csharp\
+            Framwork: .NET Core 3.1
     
