@@ -26,4 +26,6 @@ Giới hạn tuổi xem phim
 Số lớn nhất
     Số lớn nhất 01
     Số lớn nhất 02
+Bảng cửu chương đơn giản đến phức tạp
+    BCC 01
     
