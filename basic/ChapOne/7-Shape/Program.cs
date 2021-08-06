@@ -21,7 +21,8 @@ namespace csharp
             int height = 10;
             for (int i = 1; i <= height; i++)
             {
-                PrintCharacterOnLine("*", i);
+                String character = (i % 2 == 1) ? "*" : "+";
+                PrintCharacterOnLine(character, i);
                 Console.WriteLine();
             }
         }
