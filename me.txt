@@ -41,4 +41,5 @@ Sử dụng vòng lặp xử lý các tháp hình
 Xây dựng game số bí mật
     Random number
     Check
+    Total play
     
