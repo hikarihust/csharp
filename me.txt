@@ -62,4 +62,6 @@ Thống kê trong array
     Sum array by condition
 Kiểm tra sự tồn tại theo điều kiện cho trước
     Check array
+Kỹ thuật bóc tách array
+    Split
     
