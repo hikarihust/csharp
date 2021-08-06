@@ -52,4 +52,11 @@ Mô phỏng máy ATM bằng kỹ thuật tham ăn
     ATM02
 Trích xuất ngày tháng năm
     Datetime
+
+=======================================================================================================
+
+                            Tình huống thực hành với Array
+                            
+Thống kê trong array
+    Backup Basic
     
