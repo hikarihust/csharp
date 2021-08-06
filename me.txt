@@ -50,4 +50,6 @@ Mô phỏng máy ATM bằng kỹ thuật tham ăn
             out: Biến không cần xác định giá trị ban đầu, nhưng trong hàm phải gán lại giá trị cho biến
     ATM01 
     ATM02
+Trích xuất ngày tháng năm
+    Datetime
     
