@@ -38,4 +38,6 @@ Sử dụng vòng lặp xử lý các tháp hình
     Shape 01
     Shape 02
     Shape 03
+Xây dựng game số bí mật
+    Random number
     
