@@ -49,4 +49,5 @@ Mô phỏng máy ATM bằng kỹ thuật tham ăn
             ref: Biến phải có giá trị ban đầu
             out: Biến không cần xác định giá trị ban đầu, nhưng trong hàm phải gán lại giá trị cho biến
     ATM01 
+    ATM02
     

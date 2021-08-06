@@ -42,11 +42,26 @@ namespace csharp
             } while (money % 10000 != 0);
 
             // Số tờ tiền 500000
-            if (money >= FIVE_HUNDRED_THOUSAND)
+            GetValue(ref money, FIVE_HUNDRED_THOUSAND, ref fiveHundredThousand);
+            // Số tờ tiền 200000
+            GetValue(ref money, TWO_HUNDRED_THOUSAND, ref twoHundredThousand);
+            // Số tờ tiền 100000
+            GetValue(ref money, ONE_HUNDRED_THOUSAND, ref oneHundredThousand);
+            // Số tờ tiền 50000
+            GetValue(ref money, FIFTY_THOUSAND, ref fiftyThousand);
+            // Số tờ tiền 20000
+            GetValue(ref money, TWEENTY_THOUSAND, ref tweentyThousand);
+            // Số tờ tiền 10000
+            GetValue(ref money, TEN_THOUSAND, ref tenThousand);
+        }
+
+        private static void GetValue(ref int money, int moneyValue,ref int totalValue)
+        {
+            if (money >= moneyValue)
             {
-                fiveHundredThousand = money / FIVE_HUNDRED_THOUSAND;
-                money = money % FIVE_HUNDRED_THOUSAND;
-                Console.WriteLine("Mệnh giá {0} có {1} tờ", String.Format("{0:n0}", FIVE_HUNDRED_THOUSAND), fiveHundredThousand);
+                totalValue = money / moneyValue;
+                money = money % moneyValue;
+                Console.WriteLine("Mệnh giá {0} có {1} tờ", String.Format("{0:n0}", moneyValue), totalValue);
             }
         }
 
