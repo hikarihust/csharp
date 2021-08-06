@@ -28,4 +28,5 @@ Số lớn nhất
     Số lớn nhất 02
 Bảng cửu chương đơn giản đến phức tạp
     BCC 01
+    BCC 02
     
