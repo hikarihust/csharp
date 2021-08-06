@@ -68,4 +68,15 @@ Kỹ thuật bóc tách array
     Optimize
 Truy vấn và sao chép array
     Length của chuỗi 
+Nhận diện và sắp xếp array
+    Yêu cầu
+        Nhận 1 mảng số nguyên từ bàn phím: 6 4 3 1
+        Mảng chưa được sắp xếp, bạn có muốn sắp xếp mảng không? (Y/N)
+        N - thoát in ra mảng
+        Y - Bạn muốn sắp xếp mảng theo thứ tự tăng dần hay giảm dần (1/0)
+        1(tăng) - in ra mảng
+        0(giảm) - in ra mảng
+        Mảng được sắp xếp theo thứ tự tăng dần
+        Mảng được sắp xếp theo thứ tự giảm dần
+    Input array
     

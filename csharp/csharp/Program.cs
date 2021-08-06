@@ -10,7 +10,32 @@ namespace csharp
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            CountElement();
+            SortArray();
+        }
+
+        static void SortArray()
+        {
+            // Nhận 1 mảng số nguyên từ bàn phím: 6 4 3 1
+            // Mảng chưa được sắp xếp, bạn có muốn sắp xếp mảng không? (Y/N)
+            // N - thoát in ra mảng
+            // Y - Bạn muốn sắp xếp mảng theo thứ tự tăng dần hay giảm dần (1/0)
+            // 1(tăng) - in ra mảng
+            // 0(giảm) - in ra mảng
+            // Mảng được sắp xếp theo thứ tự tăng dần
+            // Mảng được sắp xếp theo thứ tự giảm dần
+
+            // 01 Nhập mảng
+            Console.WriteLine("Số phần tử của mảng: ");
+            int length = Convert.ToInt32(Console.ReadLine());
+            int[] arrayInput = new int[length];
+
+            for (int i = 0; i < length; i++)
+            {
+                Console.WriteLine("Phần tử {0}:", i + 1);
+                arrayInput[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            Console.WriteLine(String.Join(",", arrayInput));
         }
 
         static void CountElement()
