@@ -60,4 +60,6 @@ Trích xuất ngày tháng năm
 Thống kê trong array
     Backup Basic
     Sum array by condition
+Kiểm tra sự tồn tại theo điều kiện cho trước
+    Check array
     

@@ -7,7 +7,24 @@ namespace csharp
     {
         static void Main(string[] args)
         {
-            Count();
+            Check();
+        }
+
+        static void Check()
+        {
+            Console.OutputEncoding = Encoding.UTF8;
+
+            int[] arrInt = { 0, 4, 0, 4, 4 };
+            int number = 4;
+
+            for (int i = 0; i < arrInt.Length - 1; i++)
+            {
+                if (arrInt[i] + arrInt[i + 1] == number)
+                {
+                    Console.WriteLine("Success");
+                    break;
+                }
+            }
         }
 
         static void Count()
