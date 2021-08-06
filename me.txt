@@ -34,4 +34,6 @@ Bảng cửu chương đơn giản đến phức tạp
     BCC 03
 Giá trị trung bình của dãy số bất kỳ
 Xây dựng ứng dụng máy tính bỏ túi
+Sử dụng vòng lặp xử lý các tháp hình
+    Shape 01
     
