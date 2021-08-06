@@ -40,4 +40,5 @@ Sử dụng vòng lặp xử lý các tháp hình
     Shape 03
 Xây dựng game số bí mật
     Random number
+    Check
     

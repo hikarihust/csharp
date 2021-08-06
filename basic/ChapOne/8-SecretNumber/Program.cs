@@ -15,11 +15,34 @@ namespace csharp
             Console.OutputEncoding = Encoding.UTF8;
 
             const int MIN_NUMBER = 1;
-            const int MAX_NUMBER = 100;
+            const int MAX_NUMBER = 12;
+            int yourNumber = 0;
+            int score = 0;
 
             Random rand = new Random();
             int secretNumber = rand.Next(MIN_NUMBER, MAX_NUMBER + 1);
-            Console.WriteLine(secretNumber);
+
+            while (yourNumber != secretNumber)
+            {
+                Console.WriteLine("Your's Number ({0}-{1}):", MIN_NUMBER, MAX_NUMBER);
+                yourNumber = Convert.ToInt32(Console.ReadLine());
+                if (yourNumber > secretNumber)
+                {
+                    Console.WriteLine("Số bạn nhập lớn hơn số bí mật");
+                }
+                else if (yourNumber < secretNumber)
+                {
+                    Console.WriteLine("Số bạn nhập bé hơn số bí mật");
+                }
+                else
+                {
+                    Console.WriteLine("Successful");
+                }
+                score++;
+            }
+
+            Console.WriteLine("Score: " + score);
+            Console.WriteLine("secretNumber: " + secretNumber);
         }
 
         static void ShapeOne()
