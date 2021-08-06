@@ -36,4 +36,5 @@ Giá trị trung bình của dãy số bất kỳ
 Xây dựng ứng dụng máy tính bỏ túi
 Sử dụng vòng lặp xử lý các tháp hình
     Shape 01
+    Shape 02
     
