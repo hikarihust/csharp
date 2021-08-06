@@ -32,4 +32,5 @@ Bảng cửu chương đơn giản đến phức tạp
     BCC 01
     BCC 02
     BCC 03
+Giá trị trung bình của dãy số bất kỳ
     
