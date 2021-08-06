@@ -10,7 +10,24 @@ namespace csharp
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            SplitArrayOptimize();
+            CountElement();
+        }
+
+        static void CountElement()
+        {
+            string[] arrString = { "Python", "PHP", "Java", "Javascript " };
+
+            // output: [6, 3, 4, 11] là 1 mảng chứa các phần tử số là chiều dài của các phần tử chuỗi
+            int length = arrString.Length;
+
+            int[] arrayOuput = new int[length];
+
+            for (int i = 0; i < length; i++)
+            {
+                arrayOuput[i] = arrString[i].Length;
+            }
+
+            Console.WriteLine(String.Join(",", arrayOuput));
         }
 
         static void SplitArrayOptimize()

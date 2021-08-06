@@ -66,4 +66,6 @@ Kỹ thuật bóc tách array
     Split
     Remove
     Optimize
+Truy vấn và sao chép array
+    Length của chuỗi 
     
