@@ -38,8 +38,16 @@ namespace csharp
                 }
             }
 
-            Console.WriteLine("Chắn: " + String.Join(",", arrEven));
-            Console.WriteLine("Lẻ: " + String.Join(",", arrOdd));
+            int[] arrEvenResult = new int[indexArrEven];
+            int[] arrOddResult = new int[indexArrOdd];
+
+            Array.Copy(arrEven, 0, arrEvenResult, 0, indexArrEven);
+            Array.Copy(arrOdd, 0, arrOddResult, 0, indexArrOdd);
+
+            Console.WriteLine("Chắn: " + String.Join(",", arrEvenResult));
+            Console.WriteLine("Số phần tử Chắn: " + indexArrEven);
+            Console.WriteLine("Lẻ: " + String.Join(",", arrOddResult));
+            Console.WriteLine("Số phần tử lẻ: " + indexArrOdd);
         }
 
         static void Check()
