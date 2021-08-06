@@ -17,8 +17,11 @@ namespace csharp
             int numberThree = 185;
             int numberFour = 325;
 
+            int maxNumber = Math.Max(Math.Max(numberOne, numberTwo), Math.Max(numberThree, numberFour));
+
             Console.OutputEncoding = Encoding.UTF8;
-            Console.WriteLine("ExeMaxNumber");
+            Console.WriteLine("Trong 4 số {0} - {1} - {2} - {3}, thì số lớn nhất là {4}"
+                                , numberOne, numberTwo, numberThree, numberFour, maxNumber);
         }
 
         static void ExeFilm()

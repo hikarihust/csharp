@@ -25,3 +25,5 @@ Giới hạn tuổi xem phim
     Film 02
 Số lớn nhất
     Số lớn nhất 01
+    Số lớn nhất 02
+    
