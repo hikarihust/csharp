@@ -7,7 +7,47 @@ namespace csharp
     {
         static void Main(string[] args)
         {
-            Study();
+            ATM();
+        }
+
+        static void ATM()
+        {
+            // Số tiền ATM không có giới hạn
+            // Input: 100.000(chia hết cho 10000)
+            // Output: Số tờ tiền ít nhất
+            Console.OutputEncoding = Encoding.UTF8;
+
+            // Định nghĩa mệnh giá các tờ tiền
+            const int FIVE_HUNDRED_THOUSAND = 500000;
+            const int TWO_HUNDRED_THOUSAND  = 200000;
+            const int ONE_HUNDRED_THOUSAND  = 100000;
+            const int FIFTY_THOUSAND        = 50000;
+            const int TWEENTY_THOUSAND      = 20000;
+            const int TEN_THOUSAND          = 10000;
+
+            // Số lượng các tờ tiền
+            int fiveHundredThousand = 0;
+            int twoHundredThousand  = 0;
+            int oneHundredThousand  = 0;
+            int fiftyThousand       = 0;
+            int tweentyThousand     = 0;
+            int tenThousand         = 0;
+
+            int money = 0;
+
+            do
+            {
+                Console.WriteLine("Your's money: ");
+                money = Convert.ToInt32(Console.ReadLine());
+            } while (money % 10000 != 0);
+
+            // Số tờ tiền 500000
+            if (money >= FIVE_HUNDRED_THOUSAND)
+            {
+                fiveHundredThousand = money / FIVE_HUNDRED_THOUSAND;
+                money = money % FIVE_HUNDRED_THOUSAND;
+                Console.WriteLine("Mệnh giá {0} có {1} tờ", String.Format("{0:n0}", FIVE_HUNDRED_THOUSAND), fiveHundredThousand);
+            }
         }
 
         static void Study()
