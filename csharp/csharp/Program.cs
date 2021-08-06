@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace csharp
@@ -8,7 +10,17 @@ namespace csharp
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            SplitArray();
+            SplitArrayOptimize();
+        }
+
+        static void SplitArrayOptimize()
+        {
+            int[] arrInt = { 9, 1, 5, 8, 2, 0 };
+            IEnumerable<int> arrEven = arrInt.AsQueryable().Where((a, index) => a % 2 == 0);
+            IEnumerable<int> arrOdd = arrInt.AsQueryable().Where((a, index) => a % 2 != 0);
+
+            Console.WriteLine("Chắn: " + String.Join(",", arrEven));
+            Console.WriteLine("Lẻ: " + String.Join(",", arrOdd));
         }
 
         static void SplitArray()

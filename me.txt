@@ -65,4 +65,5 @@ Kiểm tra sự tồn tại theo điều kiện cho trước
 Kỹ thuật bóc tách array
     Split
     Remove
+    Optimize
     
