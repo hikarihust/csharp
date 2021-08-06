@@ -33,4 +33,5 @@ Bảng cửu chương đơn giản đến phức tạp
     BCC 02
     BCC 03
 Giá trị trung bình của dãy số bất kỳ
+Xây dựng ứng dụng máy tính bỏ túi
     
