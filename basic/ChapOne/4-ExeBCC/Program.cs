@@ -7,7 +7,28 @@ namespace csharp
     {
         static void Main(string[] args)
         {
-            ExeBCCTwo();
+            ExeBCCThree();
+        }
+
+        static void ExeBCCThree()
+        {
+            Console.OutputEncoding = Encoding.UTF8;
+            int numberStart = 0;
+
+            Console.WriteLine("Enter your age:");
+            try
+            {
+                numberStart = Convert.ToInt32(Console.ReadLine());
+            }
+            catch (Exception)
+            {
+                numberStart = 2;
+            }
+
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine("{0} x {1} = {2}", numberStart, i, numberStart * i);
+            }
         }
 
         static void ExeBCCTwo()

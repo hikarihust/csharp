@@ -10,6 +10,8 @@ Môi trường lập trình
         Ngôn ngữ: Tiếng anh 
         Account: Later
         Chọn loại giao diện: Dark 
+        Cửa sổ chính: 
+            Solution Explorer, Properties, Cửa sổ code
     Init project
         Create a new project
             Languages: C# 
@@ -29,4 +31,5 @@ Số lớn nhất
 Bảng cửu chương đơn giản đến phức tạp
     BCC 01
     BCC 02
+    BCC 03
     
