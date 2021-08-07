@@ -22,6 +22,24 @@ namespace csharp
             // Xóa ký tự thứ hai và ký tự kế cuối			a239JA2VAc1e
             str = str.Remove(1, 1);
             str = str.Remove(str.Length - 2, 1);
+
+            // Xóa các ký tự SỐ trong chuỗi					aJAVAce
+            str = Regex.Replace(str, @"[\d]", string.Empty);
+            Console.WriteLine(str);
+        }
+
+        static void Document()
+        {
+            // Xóa các ký tự SỐ trong chuỗi					aJAVAce
+            // a239JA2VAc1e
+            // 01
+            //for (int i = str.Length - 1; i >= 0; i--)
+            //{
+            //    if (Char.IsNumber(str[i]))
+            //    {
+            //        str = str.Remove(i, 1);
+            //    }
+            //}
         }
 
         static void StringCount()

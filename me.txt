@@ -91,4 +91,5 @@ So sánh chuỗi
     Compare
 Xóa và chèn chuỗi
     Remove index
+    Remove number
     
