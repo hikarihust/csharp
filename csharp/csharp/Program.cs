@@ -21,6 +21,19 @@ namespace csharp
             // Xóa ký khoảng trắng trong chuỗi						  JaVa 
             str = Regex.Replace(str, @"[\s]", "");
 
+            // Chuyển chuỗi sang dạng ký tự đối lập hoa / thường	  jAvA
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (Char.IsUpper(str[i]))
+                {
+                    str = str.Remove(i, 1).Insert(i, Char.ToLower(str[i]) + "");
+                }
+                else
+                {
+                    str = str.Remove(i, 1).Insert(i, Char.ToUpper(str[i]) + "");
+                }
+            }
+
             Console.WriteLine(str);
             Console.WriteLine(str.Length);
         }

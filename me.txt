@@ -95,4 +95,5 @@ Xóa và chèn chuỗi
     Insert
 Clean chuỗi và chuyển đổi ký tự
     Remove space
+    Upper Lower
     
