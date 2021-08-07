@@ -25,6 +25,9 @@ namespace csharp
 
             // Xóa các ký tự SỐ trong chuỗi					aJAVAce
             str = Regex.Replace(str, @"[\d]", string.Empty);
+
+            // Thêm giá trị quangvu vào giữa chuỗi		aJAVquangvuAce
+            str = str.Insert(str.Length / 2, "quangvu");
             Console.WriteLine(str);
         }
 

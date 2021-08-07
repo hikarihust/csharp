@@ -92,4 +92,5 @@ So sánh chuỗi
 Xóa và chèn chuỗi
     Remove index
     Remove number
+    Insert
     
