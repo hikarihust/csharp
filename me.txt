@@ -107,4 +107,16 @@ Phân tách chuỗi về array phức tạp
                             Các tình huống thực hành mở rộng
                             
 Kiểm tra chuỗi ID hợp lệ với Regular Expression
+    Nhận ID nhập vào từ bàn phím, In ra hợp lệ hoặc không hợp lệ. ID hợp lệ thỏa
+    Chiều dài 9 ký tự có dạng XZZZ-YYYX
+    X Ký đầu tiên và ký tự cuối cùng phải là số chẵn (khác không, 2 4 6 8)
+    Z là tập hợp các ký tự chữ thường a b c d e
+    Y là tập hợp các ký tự in hoa hoặc ký tự số lẻ
+Kiểm tra chuỗi thời gian hợp lệ với Regular Expression
+    Nhận chuỗi ngày sinh nhập vào từ bàn phím, In ra hợp lệ hoặc không hợp lệ. ID hợp lệ thỏa
+    Chiều dài 8 ký tự có dạng XX-YY-ZZZZ
+    XX ngày sinh
+    YY tháng sinh
+    ZZZZ là năm sinh (ZZZZ phải có giá trị từ năm 1945 - năm hiện tại) // 2021
+    Kiểm tra xem ngày tháng năm có hợp lệ hay không  31/02/2021 ko hợp lệ
     
