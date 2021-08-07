@@ -11,7 +11,44 @@ namespace csharp
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            CheckDate();
+            StuyList();
+        }
+
+        static void StuyList()
+        {
+            var cities = new List<string>();
+            cities.Add("New York"); // index=0  value=
+            cities.Add("London");   // index=1
+            cities.Add("Mumbai");   // 2
+            cities.Add("Chicago");  // 3
+
+            // Truy cập / In các phần tử
+            // cities.ForEach(item => Console.WriteLine(item + ", "));
+            // for (int i = 0; i < cities.Count; i++) Console.WriteLine(cities[i]);
+
+            // Truy cập 1 phần tử
+            // Console.WriteLine("1: " + cities[0]);
+
+            // Thêm mói ADD or INSERT
+            cities.Insert(1, "HCM");
+
+            // KIểm tra tồn tại
+            if (cities.Contains("HCM"))
+            {
+                Console.WriteLine("CÓ");
+            }
+            else
+            {
+                Console.WriteLine("KHÔNG CÓ");
+            }
+
+            // Remove
+            // cities.RemoveAt(1);
+            //for (int i = 0; i < cities.Count; i++) Console.WriteLine(cities[i]);
+
+            // Update 
+            cities[1] = "Hồ Chí MInh";
+            for (int i = 0; i < cities.Count; i++) Console.WriteLine(cities[i]);
         }
 
         static void CheckDate()

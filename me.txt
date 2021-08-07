@@ -119,4 +119,8 @@ Kiểm tra chuỗi thời gian hợp lệ với Regular Expression
     YY tháng sinh
     ZZZZ là năm sinh (ZZZZ phải có giá trị từ năm 1945 - năm hiện tại) // 2021
     Kiểm tra xem ngày tháng năm có hợp lệ hay không  31/02/2021 ko hợp lệ
+Thực hành với Dictionary Collection
+    List
+        Khác với array chỉ có giá trị số hoặc String, ArrayList thì bao gồm được cả 2 
+        Khi khai báo array thì cần khai báo có bao nhiêu phần tử còn List thì không 
     
