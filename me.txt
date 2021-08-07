@@ -81,4 +81,11 @@ Nhận diện và sắp xếp array
     Input array
     Asc or Desc
     Sort
+
+=======================================================================================================
+
+                            Tình huống thực hành với String
+                            
+So sánh chuỗi
+    Backup Tình huống thực hành với Array
     
