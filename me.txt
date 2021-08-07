@@ -102,3 +102,9 @@ Truy xuất chuỗi có cấu trúc
 Phân tách chuỗi về array phức tạp
     Split array
     
+=======================================================================================================
+
+                            Các tình huống thực hành mở rộng
+                            
+Kiểm tra chuỗi ID hợp lệ với Regular Expression
+    
