@@ -35,7 +35,27 @@ namespace csharp
                 arrayInput[i] = Convert.ToInt32(Console.ReadLine());
             }
 
-            Console.WriteLine(String.Join(",", arrayInput));
+            // Xác nhận loại mảng
+            int countGreater = 0;
+            int countLess = 0;
+            for (int i = 0; i < length - 1; i++)
+            {
+                if (arrayInput[i] >= arrayInput[i + 1]) countGreater++;
+                if (arrayInput[i] <= arrayInput[i + 1]) countLess++;
+            }
+
+            if (countGreater == length - 1)
+            {
+                Console.WriteLine("Giảm dần");
+            }
+            else if (countLess == length - 1)
+            {
+                Console.WriteLine("Tăng dần");
+            }
+            else
+            {
+
+            }
         }
 
         static void CountElement()
