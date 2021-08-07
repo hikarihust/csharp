@@ -96,4 +96,5 @@ Xóa và chèn chuỗi
 Clean chuỗi và chuyển đổi ký tự
     Remove space
     Upper Lower
+    Split Join
     

@@ -11,7 +11,29 @@ namespace csharp
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            StringReverse();
+            StringID();
+        }
+
+        static void StringID()
+        {
+            int id = 69;
+
+            // ID
+            //                       1  2                                               3   
+            string str = "78, 60,62,69,69,68,73,85,66  ,69,65,74,63,67 ,65,64,68,73,75,69,73,169";
+            int count = 0;
+
+            string[] idArr = str.Split(',');
+
+            // string -> array      split
+            // array  -> string     join
+            for (int i = 0; i < idArr.Length; i++)
+            {
+                int idCurrent = Int32.Parse(idArr[i]);
+                if (idCurrent == id) count++;
+            }
+
+            Console.WriteLine("ID {0} đi trễ {1} lần", id, count);
         }
 
         static void StringReverse()
