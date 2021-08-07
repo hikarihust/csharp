@@ -11,7 +11,18 @@ namespace csharp
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            StringRemove();
+            StringReverse();
+        }
+
+        static void StringReverse()
+        {
+            string str = "  J a e Va c SHARP ";
+
+            // Xóa ký khoảng trắng trong chuỗi						  JaVa 
+            str = Regex.Replace(str, @"[\s]", "");
+
+            Console.WriteLine(str);
+            Console.WriteLine(str.Length);
         }
 
         static void StringRemove()

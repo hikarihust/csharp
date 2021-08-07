@@ -93,4 +93,6 @@ Xóa và chèn chuỗi
     Remove index
     Remove number
     Insert
+Clean chuỗi và chuyển đổi ký tự
+    Remove space
     
