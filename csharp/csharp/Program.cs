@@ -11,7 +11,47 @@ namespace csharp
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            StringExtension();
+            StringMax();
+        }
+
+        static void StringMax()
+        {
+            //             0   1   2          3  4      5    6     7
+            string str = "php/12/typescript/1292/jquery/190/angular/220";
+
+            // str -> arrInput
+            string[] arrInput = str.Split('/');
+
+            // arrInput -> arrName arrTime
+            int length = arrInput.Length;
+            int indexArrName = 0;
+            int indexArrTime = 0;
+            string[] arrName = new String[length / 2];
+            int[] arrTime = new int[length / 2];
+
+            for (int i = 0; i < length; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    arrName[indexArrName] = arrInput[i];
+                    indexArrName++;
+                }
+                else
+                {
+                    arrTime[indexArrTime] = Int32.Parse(arrInput[i]);
+                    indexArrTime++;
+                }
+            }
+
+            // Tìm max arrTime
+            // Finding max
+            int courseTime = arrTime.Max();
+
+            // Positioning max
+            int position = Array.IndexOf(arrTime, courseTime);
+
+            Console.WriteLine(courseTime);
+            Console.WriteLine(arrName[position]);
         }
 
         static void StringExtension()

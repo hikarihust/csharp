@@ -99,4 +99,6 @@ Clean chuỗi và chuyển đổi ký tự
 Split Join
 Truy xuất chuỗi có cấu trúc
     Extension
+Phân tách chuỗi về array phức tạp
+    Split array
     
