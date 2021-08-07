@@ -88,4 +88,5 @@ Nhận diện và sắp xếp array
                             
 So sánh chuỗi
     Backup Tình huống thực hành với Array
+    Compare
     
