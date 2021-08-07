@@ -11,7 +11,20 @@ namespace csharp
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            StringID();
+            StringExtension();
+        }
+
+        static void StringExtension()
+        {
+            string str = "D:/GoogleDrive/Doing/__psd/quang/quangvu.xyz";
+
+            String[] arr = str.Split('/');
+
+            string fileInfo = arr[arr.Length - 1];  //quangvu.xyz
+            string[] fileInfoArray = fileInfo.Split('.');
+
+            Console.WriteLine("Name: " + fileInfoArray[0]);
+            Console.WriteLine("Extension: " + fileInfoArray[1]);
         }
 
         static void StringID()
