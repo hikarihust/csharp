@@ -54,7 +54,19 @@ namespace csharp
             }
             else
             {
+                Console.WriteLine("Mảng chưa sắp xếp, hãy chọn kiểu sắp xếp [1 - Tăng dần, 2 - Giảm dần]");
+                int functionID = Convert.ToInt32(Console.ReadLine());
 
+                if (functionID == 1)
+                {
+                    Array.Sort(arrayInput);
+                }
+                else
+                {
+                    Array.Sort(arrayInput);
+                    Array.Reverse(arrayInput);
+                }
+                Console.WriteLine(String.Join(",", arrayInput));
             }
         }
 
