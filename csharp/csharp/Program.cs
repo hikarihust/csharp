@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace csharp
 {
@@ -10,7 +11,17 @@ namespace csharp
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            StringCount();
+            StringRemove();
+        }
+
+        static void StringRemove()
+        {
+            //            012345
+            string str = "ab239JA2VAc1de";
+
+            // Xóa ký tự thứ hai và ký tự kế cuối			a239JA2VAc1e
+            str = str.Remove(1, 1);
+            str = str.Remove(str.Length - 2, 1);
         }
 
         static void StringCount()
