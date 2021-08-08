@@ -11,7 +11,28 @@ namespace csharp
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            StuyDictionary();
+            ExeSplit();
+        }
+
+        static void ExeSplit()
+        {
+            string str = "php/12/typescript/1292/jquery/9190/angular/2220";
+            string[] arrInput = str.Split('/');
+
+            var listCourse = new Dictionary<string, int>();
+
+            int i = 0;
+            while (i < arrInput.Length)
+            {
+                listCourse.Add(arrInput[i], Int32.Parse(arrInput[i + 1]));  // php, 12
+                i += 2;
+            }
+
+            int courseTime = listCourse.Values.Max();
+            string courseName = listCourse.FirstOrDefault(x => x.Value == courseTime).Key;
+
+            Console.WriteLine("Course {0} - Max {1}", courseName, courseTime);
+
         }
 
         static void StuyDictionary()
