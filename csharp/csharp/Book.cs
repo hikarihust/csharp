@@ -19,7 +19,28 @@ namespace csharp
             this.name = name;
             this.price = price;
         }
+
+        public Book(string name, int price)
+        {
+            this.id = this.MakeId(3);
+            this.name = name;
+            this.price = price;
+        }
         #endregion
+
+        private string MakeId(int length)
+        {
+            var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            var stringChars = new char[length];
+            var random = new Random();
+
+            for (int i = 0; i < length; i++)
+            {
+                stringChars[i] = chars[random.Next(chars.Length)];
+            }
+
+            return new String(stringChars);
+        }
 
         public override string ToString()
         {

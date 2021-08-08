@@ -9,7 +9,7 @@ namespace csharp
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            Book bookObj = new Book("HNGH", "C#", 1000);
+            Book bookObj = new Book("C#", 1000);
 
             Console.WriteLine(bookObj);
         }
