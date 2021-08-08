@@ -132,4 +132,7 @@ Thực hành với Dictionary Collection
                             
 Xây dựng chức năng quản lý Book
     Backup Các tình huống thực hành mở rộng, Tình huống thực hành với String
+    Class Book
+        Add -> New Item -> Class 
+        override ToString() để custom lại cách in ra 1 đối tượng 
     
