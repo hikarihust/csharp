@@ -140,4 +140,5 @@ Xây dựng chức năng quản lý Book
     Menu
     Add
     Info
+    Edit
     

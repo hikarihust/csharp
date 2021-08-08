@@ -65,7 +65,25 @@ namespace csharp
 
 		public static void editBook()
 		{
-            Console.WriteLine("editBook");
+			if (bookObj != null)
+			{
+				string bookName;
+				int bookPrice;
+
+				Console.Write("Name: ");
+				bookName = Console.ReadLine();
+
+				Console.Write("Price: ");
+				bookPrice = Convert.ToInt32(Console.ReadLine());
+
+				bookObj.Name = bookName;
+				bookObj.Price = bookPrice;
+				Console.WriteLine("Edit successfull");
+			}
+			else
+			{
+				Console.WriteLine("Not exist");
+			}
 		}
 
 		public static void infoBook()
