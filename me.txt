@@ -139,4 +139,5 @@ Xây dựng chức năng quản lý Book
     Get Set
     Menu
     Add
+    Info
     

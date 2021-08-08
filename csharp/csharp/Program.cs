@@ -55,7 +55,7 @@ namespace csharp
 				bookPrice = Convert.ToInt32(Console.ReadLine());
 
 				bookObj = new Book(bookName, bookPrice);
-				Console.WriteLine(bookObj);
+				Console.WriteLine("Add successfull");
 			}
             else
             {
@@ -70,7 +70,14 @@ namespace csharp
 
 		public static void infoBook()
 		{
-            Console.WriteLine("infoBook");
+            if (bookObj != null)
+            {
+                Console.WriteLine(bookObj);
+            }
+            else
+            {
+                Console.WriteLine("Not exist");
+            }
 		}
 
 		public static void showMenu()
