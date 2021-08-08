@@ -28,6 +28,42 @@ namespace csharp
         }
         #endregion
 
+        #region GET SET
+        public string Id
+        {
+            get
+            {
+                return this.id;
+            }
+
+        }
+        public string Name
+        {
+            get
+            {
+                return this.name;
+            }
+            set
+            {
+                this.name = value;
+            }
+        }
+
+        public int Price
+        {
+            get
+            {
+                return this.price;
+            }
+            set
+            {
+                this.price = value;
+            }
+        }
+
+        #endregion
+
+
         private string MakeId(int length)
         {
             var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";

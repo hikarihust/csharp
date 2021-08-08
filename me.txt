@@ -136,4 +136,5 @@ Xây dựng chức năng quản lý Book
         Add -> New Item -> Class 
         override ToString() để custom lại cách in ra 1 đối tượng 
     MakeID
+    Get Set
     

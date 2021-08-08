@@ -11,7 +11,9 @@ namespace csharp
             Console.OutputEncoding = Encoding.UTF8;
             Book bookObj = new Book("C#", 1000);
 
-            Console.WriteLine(bookObj);
+            bookObj.Price = 2000;
+            Console.WriteLine(bookObj.Name);
+            Console.WriteLine(bookObj.Price);
         }
     }
 }
