@@ -125,4 +125,11 @@ Thực hành với Dictionary Collection
         Khi khai báo array thì cần khai báo có bao nhiêu phần tử còn List thì không 
     Dictionary
     Exercise string
+
+=======================================================================================================
+
+                            Project quản lý sách với OOP 
+                            
+Xây dựng chức năng quản lý Book
+    Backup Các tình huống thực hành mở rộng, Tình huống thực hành với String
     
