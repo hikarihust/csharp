@@ -6,6 +6,8 @@ namespace csharp
 {
     class Program
     {
+		private static Book bookObj = null;
+
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
@@ -41,7 +43,24 @@ namespace csharp
 
 		public static void addBook()
 		{
-            Console.WriteLine("addBook");
+            if (bookObj == null)
+            {
+				string bookName;
+				int bookPrice;
+
+				Console.Write("Name: ");
+				bookName = Console.ReadLine();
+
+				Console.Write("Price: ");
+				bookPrice = Convert.ToInt32(Console.ReadLine());
+
+				bookObj = new Book(bookName, bookPrice);
+				Console.WriteLine(bookObj);
+			}
+            else
+            {
+                Console.WriteLine("Sách đã tồn tại");
+            }
 		}
 
 		public static void editBook()
