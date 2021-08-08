@@ -123,4 +123,5 @@ Thực hành với Dictionary Collection
     List
         Khác với array chỉ có giá trị số hoặc String, ArrayList thì bao gồm được cả 2 
         Khi khai báo array thì cần khai báo có bao nhiêu phần tử còn List thì không 
+    Dictionary
     

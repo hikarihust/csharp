@@ -11,7 +11,33 @@ namespace csharp
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            StuyList();
+            StuyDictionary();
+        }
+
+        static void StuyDictionary()
+        {
+            //IDictionary<string, string> dictionnaries = new Dictionary<string, string>();
+            //dictionnaries.Add("hello", "xin chào");    // hello    xin chào
+            //dictionnaries.Add("love", "tình yêu");
+
+            //foreach (KeyValuePair<string, string> kvp in dictionnaries)
+            //    Console.WriteLine("Key: {0}, Value: {1}", kvp.Key, kvp.Value);
+
+            var students = new Dictionary<int, string>();
+            students.Add(121, "Quang");    // 0   key=1    value=Quang
+            students.Add(2222, "Tèo");   // 1   key=2    value=Tèo
+
+            //foreach (var kvp in students)
+            //    Console.WriteLine("Key: {0}, Value: {1}", kvp.Key, kvp.Value);
+
+            students[2222] = "Long";
+
+            for (int i = 0; i < students.Count; i++)
+            {
+                Console.WriteLine("Key: {0}, Value: {1}",
+                                                        students.ElementAt(i).Key,
+                                                        students.ElementAt(i).Value);
+            }
         }
 
         static void StuyList()
