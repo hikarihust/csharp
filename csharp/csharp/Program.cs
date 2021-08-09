@@ -46,17 +46,24 @@ namespace csharp
 
 		public static void addBook()
 		{
-			string bookName;
-			int bookPrice;
+			if (storeObj.checkFull() == false)
+            {
+				string bookName;
+				int bookPrice;
 
-			Console.Write("Name: ");
-			bookName = Console.ReadLine();
+				Console.Write("Name: ");
+				bookName = Console.ReadLine();
 
-			Console.Write("Price: ");
-			bookPrice = Convert.ToInt32(Console.ReadLine());
+				Console.Write("Price: ");
+				bookPrice = Convert.ToInt32(Console.ReadLine());
 
-			Book bookObj = new Book(bookName, bookPrice);
-			Console.WriteLine("Add successfull");
+				Book bookObj = new Book(bookName, bookPrice);
+				storeObj.add(bookObj);
+			}
+			else
+			{
+                Console.WriteLine("Store is full!");
+			}
 		}
 
 		public static void editBook()

@@ -37,7 +37,14 @@ namespace csharp
 
         public void add(Book bookObj)
         {
-
+            if (!this.checkFull())
+            {
+                listItems.Add(bookObj);
+            }
+            else
+            {
+                Console.WriteLine("Store is full!");
+            }
         }
 
         public void edit(string bookId, string bookName, int bookPrice)
