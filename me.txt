@@ -143,4 +143,5 @@ Xây dựng chức năng quản lý Book
     Edit
 Xây dựng chức năng quản lý Store
     Store
+    Full & Empty
     

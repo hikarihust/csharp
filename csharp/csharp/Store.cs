@@ -25,11 +25,13 @@ namespace csharp
 
         public bool checkFull()
         {
+            if (listItems.Count == MAX_ITEMS) return true;
             return false;
         }
 
         public bool checkEmty()
         {
+            if (listItems.Count == 0) return true;
             return false;
         }
 
