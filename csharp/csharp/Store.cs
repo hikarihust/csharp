@@ -64,7 +64,18 @@ namespace csharp
 
         public void list()
         {
-        
+            Console.WriteLine("------------------------------------------------------");
+
+            if (this.checkEmty() == true)
+            {
+                Console.WriteLine("Store is empty!");
+            }
+            else
+            {
+                listItems.ForEach(item => Console.WriteLine(item));
+            }
+
+            Console.WriteLine("------------------------------------------------------");
         }
     }
 }

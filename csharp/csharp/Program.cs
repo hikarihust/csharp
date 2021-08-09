@@ -95,7 +95,7 @@ namespace csharp
 
 		public static void listBook()
 		{
-            Console.WriteLine("listBook");
+			storeObj.list();
 		}
 
 		public static void showMenu()
