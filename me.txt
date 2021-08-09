@@ -141,4 +141,6 @@ Xây dựng chức năng quản lý Book
     Add
     Info
     Edit
+Xây dựng chức năng quản lý Store
+    Store
     
