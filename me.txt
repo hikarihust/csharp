@@ -162,4 +162,5 @@ Lưu trữ dữ liệu project trên tập tin
     StreamWriter
         Đường dẫn file được sinh ra: csharp\csharp\bin\Debug\netcoreapp3.1\study-write.txt
     StreamReader
+    Save data 01
     

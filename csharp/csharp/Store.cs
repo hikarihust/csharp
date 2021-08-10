@@ -10,11 +10,13 @@ namespace csharp
         #region Thuộc tính
         private const int MAX_ITEMS = 5;
         private List<Book> listItems = null;
+        private DataFile dataFileObj;
         #endregion
 
         #region Constructor
         public Store()
         {
+            dataFileObj = new DataFile("bookstore.txt", "$$$$$$");
             listItems = new List<Book>(MAX_ITEMS);
         }
         #endregion
@@ -41,6 +43,7 @@ namespace csharp
             if (!this.checkFull())
             {
                 listItems.Add(bookObj);
+                dataFileObj.Write(listItems);
             }
             else
             {
