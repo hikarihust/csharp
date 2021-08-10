@@ -59,10 +59,11 @@ namespace csharp
 
 				Book bookObj = new Book(bookName, bookPrice);
 				storeObj.add(bookObj);
+				Notify("Add successfull");
 			}
 			else
 			{
-                Console.WriteLine("Store is full!");
+				Notify("Store is full!");
 			}
 		}
 
@@ -144,15 +145,37 @@ namespace csharp
 		public static void showMenu()
 		{
 
-            Console.WriteLine("===================== BOOK MANAGER =====================");
-            Console.WriteLine("1. Add book");
-            Console.WriteLine("2. Edit book");
-            Console.WriteLine("3. Info book (by ID)");
-            Console.WriteLine("4. Delete book");
-            Console.WriteLine("5. Filter book by Price");
-            Console.WriteLine("6. List book");
-            Console.WriteLine("7. Exit");
+            Title("===================== BOOK MANAGER =====================");
+			SubTitle("1. Add book");
+			SubTitle("2. Edit book");
+            SubTitle("3. Info book (by ID)");
+            SubTitle("4. Delete book");
+            SubTitle("5. Filter book by Price");
+            SubTitle("6. List book");
+            SubTitle("7. Exit");
 			Console.Write("Your choise [1-7]: ");
+		}
+
+		public static void Title(string content)
+		{
+			Console.ForegroundColor = ConsoleColor.Green;
+			Console.WriteLine(content);
+			Console.ResetColor();
+		}
+
+		public static void SubTitle(string content)
+		{
+			Console.ForegroundColor = ConsoleColor.Yellow;
+			Console.WriteLine(content);
+			Console.ResetColor();
+		}
+
+		public static void Notify(string content)
+		{
+			Console.BackgroundColor = ConsoleColor.Yellow;
+			Console.ForegroundColor = ConsoleColor.Black;
+			Console.WriteLine(content);
+			Console.ResetColor();
 		}
 	}
 }

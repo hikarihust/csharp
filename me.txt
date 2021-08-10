@@ -149,4 +149,6 @@ Xây dựng chức năng quản lý Store
     Exist & Delete
     Find & Filter
     Edit
+Tùy chỉnh giao diện console cho ứng dụng
+    Change color
     
