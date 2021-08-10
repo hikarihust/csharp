@@ -18,6 +18,13 @@ namespace csharp
         {
             dataFileObj = new DataFile("bookstore.txt", "$$$$$$");
             listItems = new List<Book>(MAX_ITEMS);
+
+            List<Book> listBooksFromFile = dataFileObj.Read();
+
+            if (listBooksFromFile.Count > 0)
+            {
+                listItems.AddRange(listBooksFromFile);
+            }
         }
         #endregion
 

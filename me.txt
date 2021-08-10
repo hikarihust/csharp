@@ -164,4 +164,5 @@ Lưu trữ dữ liệu project trên tập tin
     StreamReader
     Save data 01
     Save data 02
+    Read data
     
