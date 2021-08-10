@@ -103,6 +103,44 @@ namespace csharp
             }
         }
 
+        public void findByPrice(string strPrice)
+        {
+            char type = strPrice[0]; // >123 <123 =123          // <>=13213
+            int price = Int32.Parse(strPrice.Substring(1));
+
+            List<Book> filtered = new List<Book>();
+
+            switch (type)
+            {
+                case '>':
+                    filtered = listItems.FindAll(item => item.Price > price);
+                    break;
+                case '<':
+                    filtered = listItems.FindAll(item => item.Price < price);
+                    break;
+                case '=':
+                    filtered = listItems.FindAll(item => item.Price == price);
+                    break;
+                default:
+                    WriteLine.Error("Cú pháp sai [>=<price]");
+                    break;
+            }
+
+            Console.WriteLine("------------------------------------------------------");
+
+            if (filtered.Count == 0)
+            {
+                Console.WriteLine("Empty!");
+            }
+            else
+            {
+                filtered.ForEach(item => Console.WriteLine(item));
+            }
+
+            Console.WriteLine("------------------------------------------------------");
+
+        }
+
         public void findByPrice(int price)
         {
             List<Book> filtered = listItems.FindAll(item => item.Price > price);

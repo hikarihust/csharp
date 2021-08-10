@@ -146,10 +146,10 @@ namespace csharp
 
 		public static void findBook()
 		{
-			int price;
+			string price;
 
 			Console.Write("Price: ");
-			price = Convert.ToInt32(Console.ReadLine());
+			price = Console.ReadLine();
 			storeObj.findByPrice(price);
 		}
 
