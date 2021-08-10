@@ -43,6 +43,32 @@ namespace csharp
             }
         }
 
+        static void StudyReadFile()
+        {
+            List<string> listStudent = new List<string>();
+
+            try
+            {
+                StreamReader sr = new StreamReader("study-write.txt", Encoding.UTF8);
+                string line = sr.ReadLine();
+                while (line != null)
+                {
+                    string[] arrOuput = line.Split("----");
+
+                    listStudent.Add(arrOuput[1]);
+                    line = sr.ReadLine();
+                }
+
+                sr.Close();
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Có lỗi hệ thống");
+            }
+
+            listStudent.ForEach(item => Console.WriteLine(item));
+        }
+
         static void ExeSplit()
         {
             string str = "php/12/typescript/1292/jquery/9190/angular/2220";
