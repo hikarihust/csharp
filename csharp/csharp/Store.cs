@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace csharp
@@ -20,7 +21,7 @@ namespace csharp
 
         public bool checkExist(string bookId)
         {
-            return false;
+            return listItems.Any(item => item.Id.Equals(bookId));
         }
 
         public bool checkFull()
@@ -54,7 +55,16 @@ namespace csharp
 
         public void delete(string bookId)
         {
-        
+            if (this.checkExist(bookId))
+            {
+                Book bookObj = listItems.Single(item => item.Id.Equals(bookId));
+                listItems.Remove(bookObj);
+                Console.WriteLine("Delete successfull");
+            }
+            else
+            {
+                Console.WriteLine("Not exist");
+            }
         }
 
         public void find(string bookId)

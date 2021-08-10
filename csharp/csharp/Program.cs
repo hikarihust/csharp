@@ -85,7 +85,20 @@ namespace csharp
 
 		public static void deleteBook()
 		{
-            Console.WriteLine("deleteBook");
+			string bookId;
+
+			Console.Write("ID: ");
+			bookId = Console.ReadLine();
+
+			if (storeObj.checkExist(bookId))
+			{
+				storeObj.delete(bookId);
+                Console.WriteLine("Delete successful");
+			}
+			else
+			{
+                Console.WriteLine("Not exist");
+			}
 		}
 
 		public static void findBook()
