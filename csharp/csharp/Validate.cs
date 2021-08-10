@@ -29,6 +29,18 @@ namespace csharp
             return flagCheck;
         }
 
+        public bool checkPrice(int value)
+        {
+            bool flag = (value >= 1) && (value <= 10);
+
+            if (!flag)
+            {
+                this.errors.Add("price", "Giá trị này nằm trong khoảng 1-10");
+            }
+
+            return flag;
+        }
+
         public void showError()
         {
             foreach (var kvp in errors)

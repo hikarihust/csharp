@@ -61,8 +61,9 @@ namespace csharp
 
 				Validate validateObj = new Validate();
 				bool flagName = validateObj.checkName(bookName);
+				bool flagPrice = validateObj.checkPrice(bookPrice);
 
-				if (flagName)
+				if (flagName && flagPrice)
 				{
 					Book bookObj = new Book(bookName, bookPrice);
 					storeObj.add(bookObj);

@@ -155,4 +155,5 @@ Tùy chỉnh giao diện console cho ứng dụng
 Kiểm tra sự hợp lệ của dữ liệu
     Try catch
     Validate 01
+    Validate 02
     
