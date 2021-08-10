@@ -165,4 +165,6 @@ Lưu trữ dữ liệu project trên tập tin
     Save data 01
     Save data 02
     Read data
+Xây dựng các chứng năng lọc, thống kê
+    Sort Name
     

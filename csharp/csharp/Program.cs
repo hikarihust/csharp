@@ -29,8 +29,11 @@ namespace csharp
 						case 3: infoBook(); break;
 						case 4: deleteBook(); break;
 						case 5: findBook(); break;
-						case 6: listBook(); break;
-						case 7:
+						case 6: listBook("name", 0); break;     // name asc
+						case 7: listBook("name", 1); break;     // name desc
+						case 8: listBook("price", 1); break;    // price giảm dần
+						case 9: listBook("price", 0); break;    // price tăng dần
+						case 10:
 							flag = false;
 							break;
 						default:
@@ -150,8 +153,12 @@ namespace csharp
 			storeObj.findByPrice(price);
 		}
 
-		public static void listBook()
+		public static void listBook(string field, int type)
 		{
+			if (field.Equals("name") && type == 0) storeObj.sortNameAZ();
+			if (field.Equals("name") && type == 1) storeObj.sortNameZA();
+			if (field.Equals("price") && type == 0) storeObj.sortPriceAZ();
+			if (field.Equals("price") && type == 1) storeObj.sortPriceZA();
 			storeObj.list();
 		}
 
@@ -162,11 +169,14 @@ namespace csharp
 			WriteLine.SubTitle("1. Add book");
 			WriteLine.SubTitle("2. Edit book");
             WriteLine.SubTitle("3. Info book (by ID)");
-            WriteLine.SubTitle("4. Delete book");
+            WriteLine.SubTitle("4. Delete book (by ID)");
             WriteLine.SubTitle("5. Filter book by Price");
-            WriteLine.SubTitle("6. List book");
-            WriteLine.SubTitle("7. Exit");
-			Console.Write("Your choise [1-7]: ");
+            WriteLine.SubTitle("6. List book (Name A - Z)");
+			WriteLine.SubTitle("7. List book (Name Z - A)");
+			WriteLine.SubTitle("8. List book (Price giảm dần)");
+			WriteLine.SubTitle("9. List book (Price tăng dần)");
+			WriteLine.SubTitle("10. Exit");
+			Console.Write("Your choise [1-10]: ");
 		}
 	}
 }

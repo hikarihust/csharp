@@ -135,5 +135,24 @@ namespace csharp
 
             Console.WriteLine("------------------------------------------------------");
         }
+
+        public void sortNameAZ()
+        {
+            listItems.Sort((Book a, Book b) => a.Name.CompareTo(b.Name)); // ascending sort
+        }
+
+        public void sortNameZA()
+        {
+            listItems.Sort((Book a, Book b) => b.Name.CompareTo(a.Name)); // ascending sort
+        }
+
+        public void sortPriceZA()
+        {
+
+        }
+        public void sortPriceAZ()
+        {
+        
+        }
     }
 }
