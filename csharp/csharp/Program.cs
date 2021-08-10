@@ -69,13 +69,27 @@ namespace csharp
 		public static void editBook()
 		{
 			string bookName;
+			string bookId;
 			int bookPrice;
 
-			Console.Write("Name: ");
-			bookName = Console.ReadLine();
+			Console.Write("ID: ");
+			bookId = Console.ReadLine();
 
-			Console.Write("Price: ");
-			bookPrice = Convert.ToInt32(Console.ReadLine());
+			if (storeObj.checkExist(bookId))
+			{
+				Console.Write("Name: ");
+				bookName = Console.ReadLine();
+
+				Console.Write("Price: ");
+				bookPrice = Convert.ToInt32(Console.ReadLine());
+
+				storeObj.edit(bookId, bookName, bookPrice);
+                Console.WriteLine("Edit successfull");
+			}
+			else
+			{
+                Console.WriteLine("Not exist");
+			}
 		}
 
 		public static void infoBook()

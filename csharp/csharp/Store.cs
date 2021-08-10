@@ -50,7 +50,19 @@ namespace csharp
 
         public void edit(string bookId, string bookName, int bookPrice)
         {
-        
+            if (this.checkExist(bookId))
+            {
+                var item = listItems.FirstOrDefault(item => item.Id == bookId);
+                if (item != null)
+                {
+                    item.Name = bookName;
+                    item.Price = bookPrice;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Not exist");
+            }
         }
 
         public void delete(string bookId)
