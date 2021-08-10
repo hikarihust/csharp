@@ -59,9 +59,19 @@ namespace csharp
 				Console.Write("Price: ");
 				bookPrice = Convert.ToInt32(Console.ReadLine());
 
-				Book bookObj = new Book(bookName, bookPrice);
-				storeObj.add(bookObj);
-				WriteLine.Notify("Add successfull");
+				Validate validateObj = new Validate();
+				bool flagName = validateObj.checkName(bookName);
+
+				if (flagName)
+				{
+					Book bookObj = new Book(bookName, bookPrice);
+					storeObj.add(bookObj);
+					WriteLine.Notify("Add successfull");
+				}
+				else
+				{
+					validateObj.showError();
+				}
 			}
 			else
 			{

@@ -27,5 +27,13 @@ namespace csharp
 			Console.WriteLine(content);
 			Console.ResetColor();
 		}
+
+		public static void Error(string content)
+		{
+			Console.BackgroundColor = ConsoleColor.Red;
+			Console.ForegroundColor = ConsoleColor.White;
+			Console.WriteLine(content);
+			Console.ResetColor();
+		}
 	}
 }

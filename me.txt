@@ -154,4 +154,5 @@ Tùy chỉnh giao diện console cho ứng dụng
     WriteLine class
 Kiểm tra sự hợp lệ của dữ liệu
     Try catch
+    Validate 01
     
