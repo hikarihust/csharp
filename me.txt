@@ -167,4 +167,5 @@ Lưu trữ dữ liệu project trên tập tin
     Read data
 Xây dựng các chứng năng lọc, thống kê
     Sort Name
+    Sort Price
     

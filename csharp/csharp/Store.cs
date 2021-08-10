@@ -148,11 +148,13 @@ namespace csharp
 
         public void sortPriceZA()
         {
-
+            //  listItems.Sort((Book a, Book b) => b.Price.CompareTo(a.Price));
+            listItems = listItems.OrderByDescending(a => a.Price).ToList();
         }
         public void sortPriceAZ()
         {
-        
+            listItems = listItems.OrderBy(a => a.Price).ToList();
+            // listItems.Sort((Book a, Book b) => a.Price.CompareTo(b.Price));
         }
     }
 }
