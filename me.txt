@@ -156,4 +156,6 @@ Kiểm tra sự hợp lệ của dữ liệu
     Try catch
     Validate 01
     Validate 02
+Lưu trữ dữ liệu project trên tập tin
+    File
     

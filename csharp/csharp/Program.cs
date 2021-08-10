@@ -10,7 +10,7 @@ namespace csharp
 
 		static void Main(string[] args)
         {
-            Console.OutputEncoding = Encoding.UTF8;
+
 			Console.OutputEncoding = Encoding.UTF8;
 			int functionID = 0;
 			bool flag = true;

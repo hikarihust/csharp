@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -8,6 +9,23 @@ namespace csharp
 {
     class ChapFour
     {
+        private static void StudyFile()
+        {
+            /*
+			string[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
+			string data = string.Join("----", cars);
+			File.WriteAllText("data.txt", data, Encoding.UTF8);    // data, file
+			*/
+
+            string content = File.ReadAllText("data.txt");
+            string[] arrOuput = content.Split("----");
+
+            for (int i = 0; i < arrOuput.Length; i++)
+            {
+                Console.WriteLine(arrOuput[i]);
+            }
+        }
+
         static void ExeSplit()
         {
             string str = "php/12/typescript/1292/jquery/9190/angular/2220";
