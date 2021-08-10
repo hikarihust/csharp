@@ -60,6 +60,7 @@ namespace csharp
                 {
                     item.Name = bookName;
                     item.Price = bookPrice;
+                    dataFileObj.Write(listItems);
                 }
             }
             else
@@ -74,6 +75,7 @@ namespace csharp
             {
                 Book bookObj = listItems.Single(item => item.Id.Equals(bookId));
                 listItems.Remove(bookObj);
+                dataFileObj.Write(listItems);
             }
             else
             {
