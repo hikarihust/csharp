@@ -59,11 +59,11 @@ namespace csharp
 
 				Book bookObj = new Book(bookName, bookPrice);
 				storeObj.add(bookObj);
-				Notify("Add successfull");
+				WriteLine.Notify("Add successfull");
 			}
 			else
 			{
-				Notify("Store is full!");
+				WriteLine.Notify("Store is full!");
 			}
 		}
 
@@ -85,11 +85,11 @@ namespace csharp
 				bookPrice = Convert.ToInt32(Console.ReadLine());
 
 				storeObj.edit(bookId, bookName, bookPrice);
-                Console.WriteLine("Edit successfull");
+				WriteLine.Notify("Edit successfull");
 			}
 			else
 			{
-                Console.WriteLine("Not exist");
+				WriteLine.Notify("Not exist");
 			}
 		}
 
@@ -106,7 +106,7 @@ namespace csharp
 			}
 			else
 			{
-				Console.WriteLine("Not exist");
+				WriteLine.Notify("Not exist");
 			}
 		}
 
@@ -120,11 +120,11 @@ namespace csharp
 			if (storeObj.checkExist(bookId))
 			{
 				storeObj.delete(bookId);
-                Console.WriteLine("Delete successful");
+				WriteLine.Notify("Delete successful");
 			}
 			else
 			{
-                Console.WriteLine("Not exist");
+				WriteLine.Notify("Not exist");
 			}
 		}
 
@@ -144,38 +144,16 @@ namespace csharp
 
 		public static void showMenu()
 		{
-
-            Title("===================== BOOK MANAGER =====================");
-			SubTitle("1. Add book");
-			SubTitle("2. Edit book");
-            SubTitle("3. Info book (by ID)");
-            SubTitle("4. Delete book");
-            SubTitle("5. Filter book by Price");
-            SubTitle("6. List book");
-            SubTitle("7. Exit");
+			Console.ResetColor();
+			WriteLine.Title("===================== BOOK MANAGER =====================");
+			WriteLine.SubTitle("1. Add book");
+			WriteLine.SubTitle("2. Edit book");
+            WriteLine.SubTitle("3. Info book (by ID)");
+            WriteLine.SubTitle("4. Delete book");
+            WriteLine.SubTitle("5. Filter book by Price");
+            WriteLine.SubTitle("6. List book");
+            WriteLine.SubTitle("7. Exit");
 			Console.Write("Your choise [1-7]: ");
-		}
-
-		public static void Title(string content)
-		{
-			Console.ForegroundColor = ConsoleColor.Green;
-			Console.WriteLine(content);
-			Console.ResetColor();
-		}
-
-		public static void SubTitle(string content)
-		{
-			Console.ForegroundColor = ConsoleColor.Yellow;
-			Console.WriteLine(content);
-			Console.ResetColor();
-		}
-
-		public static void Notify(string content)
-		{
-			Console.BackgroundColor = ConsoleColor.Yellow;
-			Console.ForegroundColor = ConsoleColor.Black;
-			Console.WriteLine(content);
-			Console.ResetColor();
 		}
 	}
 }

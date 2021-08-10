@@ -71,7 +71,6 @@ namespace csharp
             {
                 Book bookObj = listItems.Single(item => item.Id.Equals(bookId));
                 listItems.Remove(bookObj);
-                Console.WriteLine("Delete successfull");
             }
             else
             {
