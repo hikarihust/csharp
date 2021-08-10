@@ -9,6 +9,23 @@ namespace csharp
 {
     class ChapFour
     {
+        static void StudyWriteFile()
+        {
+            try
+            {
+                StreamWriter sw = new StreamWriter("study-write.txt", true, Encoding.UTF8);
+                int id = 13;
+                string name = "Quang";
+                sw.WriteLine(id + "----" + name);
+
+                sw.Close();
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Có lỗi hệ thống!!");
+            }
+        }
+
         private static void StudyFile()
         {
             /*

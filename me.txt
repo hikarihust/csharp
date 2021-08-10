@@ -158,4 +158,7 @@ Kiểm tra sự hợp lệ của dữ liệu
     Validate 02
 Lưu trữ dữ liệu project trên tập tin
     File
+        Đường dẫn file được sinh ra: csharp\csharp\bin\Debug\netcoreapp3.1\data.txt
+    StreamWriter
+        Đường dẫn file được sinh ra: csharp\csharp\bin\Debug\netcoreapp3.1\study-write.txt
     
