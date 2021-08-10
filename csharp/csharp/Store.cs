@@ -69,7 +69,32 @@ namespace csharp
 
         public void find(string bookId)
         {
-         
+            if (this.checkExist(bookId))
+            {
+                Book bookObj = listItems.Single(item => item.Id.Equals(bookId));
+                Console.WriteLine(bookObj);
+            }
+            else
+            {
+                Console.WriteLine("Not exist");
+            }
+        }
+
+        public void findByPrice(int price)
+        {
+            List<Book> filtered = listItems.FindAll(item => item.Price > price);
+            Console.WriteLine("------------------------------------------------------");
+
+            if (filtered.Count == 0)
+            {
+                Console.WriteLine("Empty!");
+            }
+            else
+            {
+                filtered.ForEach(item => Console.WriteLine(item));
+            }
+
+            Console.WriteLine("------------------------------------------------------");
         }
 
         public void list()

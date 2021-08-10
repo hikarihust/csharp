@@ -147,4 +147,5 @@ Xây dựng chức năng quản lý Store
     Add
     List
     Exist & Delete
+    Find & Filter
     

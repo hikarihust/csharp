@@ -80,7 +80,19 @@ namespace csharp
 
 		public static void infoBook()
 		{
-            Console.WriteLine("infoBook");
+			string bookId;
+
+			Console.Write("ID: ");
+			bookId = Console.ReadLine();
+
+			if (storeObj.checkExist(bookId))
+			{
+				storeObj.find(bookId);
+			}
+			else
+			{
+				Console.WriteLine("Not exist");
+			}
 		}
 
 		public static void deleteBook()
@@ -103,7 +115,11 @@ namespace csharp
 
 		public static void findBook()
 		{
-            Console.WriteLine("findBook");
+			int price;
+
+			Console.Write("Price: ");
+			price = Convert.ToInt32(Console.ReadLine());
+			storeObj.findByPrice(price);
 		}
 
 		public static void listBook()
@@ -117,9 +133,9 @@ namespace csharp
             Console.WriteLine("===================== BOOK MANAGER =====================");
             Console.WriteLine("1. Add book");
             Console.WriteLine("2. Edit book");
-            Console.WriteLine("3. Info book");
+            Console.WriteLine("3. Info book (by ID)");
             Console.WriteLine("4. Delete book");
-            Console.WriteLine("5. Find book");
+            Console.WriteLine("5. Filter book by Price");
             Console.WriteLine("6. List book");
             Console.WriteLine("7. Exit");
 			Console.Write("Your choise [1-7]: ");
