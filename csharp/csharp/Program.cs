@@ -30,15 +30,17 @@ namespace csharp
 						case 4: deleteBook(); break;
 						case 5: findBook(); break;
 						case 6: listBook(); break;
-						case 7: 
-						default:
+						case 7:
 							flag = false;
+							break;
+						default:
+							flag = true;
 							break;
 					}
 				}
 				catch (Exception)
 				{
-                    Console.WriteLine("Có lỗi hệ thống!");
+                    WriteLine.Notify("Có lỗi hệ thống!");
 				}
 
 			} while (flag == true);
