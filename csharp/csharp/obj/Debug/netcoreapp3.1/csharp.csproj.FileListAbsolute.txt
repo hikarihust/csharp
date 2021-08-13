@@ -1,0 +1,13 @@
+C:\xampp\htdocs\csharp\csharp\csharp\bin\Debug\netcoreapp3.1\csharp.exe
+C:\xampp\htdocs\csharp\csharp\csharp\bin\Debug\netcoreapp3.1\csharp.deps.json
+C:\xampp\htdocs\csharp\csharp\csharp\bin\Debug\netcoreapp3.1\csharp.runtimeconfig.json
+C:\xampp\htdocs\csharp\csharp\csharp\bin\Debug\netcoreapp3.1\csharp.runtimeconfig.dev.json
+C:\xampp\htdocs\csharp\csharp\csharp\bin\Debug\netcoreapp3.1\csharp.dll
+C:\xampp\htdocs\csharp\csharp\csharp\bin\Debug\netcoreapp3.1\csharp.pdb
+C:\xampp\htdocs\csharp\csharp\csharp\obj\Debug\netcoreapp3.1\csharp.csproj.AssemblyReference.cache
+C:\xampp\htdocs\csharp\csharp\csharp\obj\Debug\netcoreapp3.1\csharp.AssemblyInfoInputs.cache
+C:\xampp\htdocs\csharp\csharp\csharp\obj\Debug\netcoreapp3.1\csharp.AssemblyInfo.cs
+C:\xampp\htdocs\csharp\csharp\csharp\obj\Debug\netcoreapp3.1\csharp.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\csharp\csharp\csharp\obj\Debug\netcoreapp3.1\csharp.dll
+C:\xampp\htdocs\csharp\csharp\csharp\obj\Debug\netcoreapp3.1\csharp.pdb
+C:\xampp\htdocs\csharp\csharp\csharp\obj\Debug\netcoreapp3.1\csharp.genruntimeconfig.cache
